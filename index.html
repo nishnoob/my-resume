@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+                @page {
+                    size: A4;
+                    margin: 0mm;
+                }
+                html{
+                    font-family: 'Lora', serif;
+                    width: 21cm;
+                    height: 29.7cm;
+                    font-size: 17px;
+                }
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                ul {
+                    list-style: none;	
+                }
+                li::before {
+                    content: "\2022";
+                    font-size: 20px;
+                    line-height: 18px;
+                    font-weight: bolder;
+                    display: inline-block;
+                    width: 10px;
+                    margin-left: -15px;
+                    color:rgb(0, 170, 28)
+                }
+
+
+                header {
+                    background-color: #daffe5;
+                    padding: 12px 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    /* align-items: center; */
+                }
+                .headerName {
+                    font-size: 42px;
+                    font-weight: 400;
+                }
+                .locName {
+                    color:gray;
+                    font-size: 16px;
+                }
+                .miscDetailsContainer {
+                    font-size: 14px;
+                }
+                .miscDetailsContainer div {
+                    margin-bottom: 8px;
+                    display: flex;
+                    align-items: baseline;
+                }
+                .miscDetailsContainer div:last-of-type {
+                    margin-bottom: 0px;
+                }
+                .miscDetailsContainer div.align-baseline {
+                    align-items: end;
+                }
+                .miscDetailsContainer div span, .miscDetailsContainer div a {
+                    margin-left: 8px;
+                }
+                .miscDetailsContainer div a {
+                    text-decoration: none;
+                    color: black;
+                }
+                .resume-summary{
+                    padding: 8px;
+                    background-color: rgb(222, 222, 222);
+                    border-radius: 4px;
+                    margin-bottom: 8px;
+                }
+
+
+                .bodyContent{
+                    padding: 12px 24px 0 24px;
+                }
+                #experience {
+                    min-width: 47%;
+                }
+                #experience > h3 {
+                    margin: 4px 0 4px 0;
+                    color: rgb(160, 45, 45);
+                }
+                #experience-list {
+                    margin-left:4px;
+                    padding-left: 8px;
+                    border-left: 2px black solid;
+                }
+                #experience-list article {
+                    margin-bottom: 18px;
+                }
+                #experience-list article:last-of-type {
+                    margin-bottom: 0;
+                }
+                .exp-title {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .exp-subtext {
+                    font-style: italic;
+                    font-size: 15px;
+                    margin-bottom: 2px;
+                }
+                a.exp-subtext {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+                .exp-summary {
+                    margin-left: 2px;
+                    padding-left: 16px;
+                    margin-bottom: 10px;
+                }
+                .exp-period {
+                    font-weight: 500;
+                }
+                .exp-duration {
+                    color: grey;
+                }
+                .two-columns {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .two-columns #experience {
+                    min-width: 0;
+                    width: 47%;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <p class="headerName">Agnish Mukherjee</p>
+                <p class="locName">Bengaluru, KA</p>
+            </div>
+            <div class="miscDetailsContainer">
+                <div class="align-baseline">
+                    <img src="./code.svg" width="15px" />
+                    <a href="https://www.github.com/nishnoob" target="_blank">github.com/nishnoob</a>
+                </div>
+                <div>
+                    <img src="./mail.svg" width="12px" />
+                    <span>agnish15m@gmail.com</span>
+                </div>
+                <div>
+                    <img src="./linkedin.svg" width="13px" />
+                    <a href="https://www.linkedin.com/in/agnishmkj" target="_blank">linkedin.com/in/agnishmkj</a>
+                </div>
+            </div>
+        </header>
+        <section class="bodyContent">
+            <p class="resume-summary">
+                <i>"It's not the Intelligence, it's the perseverance that I seek."</i>
+            </p>
+            <section id="experience">
+                <h3>Experience</h3> 
+                <!-- <span class="exp-duration">[4y10m]</span> -->
+                <div id="experience-list">
+                    <article>
+                        <div class="exp-title">
+                            <p>
+                                <strong>
+                                    Software Engineer
+                                </strong>
+                                &ensp;|&ensp;Fitmint
+                            </p>
+                            <span class="exp-period">
+                                Nov 2022 – May 2023 <span class="exp-duration">[6m]</span>
+                            </span>
+                        </div>
+                        <p class="exp-subtext">
+                            A social fitness game which helps you get super-consistent by building your avatar & challenging your friends
+                        </p>
+                        <div class="exp-summary">                      
+                            <ul>
+                                <li>
+                                    Built a NFT Marketplace which pulled in <strong>~150,000 MATIC</strong> worth commission.
+                                </li>
+                                <li>
+                                    Built and maintained the flutter app managing a <strong>~6000 DAU</strong>.
+                                </li>
+                                <li>
+                                    Figured a workaround to incomplete three.js flutter package by building a three.js 3D model loader in web and used embedded it using web view.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="exp-title">
+                            <p>
+                                <strong>
+                                    Frontend Engineer
+                                </strong>
+                                &ensp;|&ensp;smallcase
+                            </p>
+                            <span class="exp-period">
+                                Mar 2021 – Nov 2023 <span class="exp-duration">[1y 7m]</span>
+                            </span>
+                        </div>
+                        <p class="exp-subtext">
+                            New age investment analysis platform.
+                        </p>
+                        <div class="exp-summary">                      
+                            <ul>
+                                <li>
+                                    Architectured and co-built a <strong>social networking platform</strong> that opened with over <stong>27,000</stong> registrations on beta launch.
+                                </li>
+                                <li>
+                                    Devised a way to sort all constituents of <strong>Nifty500</strong> Index based on live pricing with <strong>no additional iterative time complexity</strong>.
+                                </li>
+                                <!-- <li>
+                                    Took charge of migrating codebase from various analytics script to <strong>Segment</strong> resulting with a bump in Lighthouse Audits. 
+                                </li> -->
+                                <!-- <li>
+                                    Revamped table data to follow <strong>semantic HTML</strong> that concluded with search results showing structured data.
+                                </li> -->
+                                <!-- <li>
+                                    Conquered CSS and learned reusability, variables, combinators and specificity. Still learning.  
+                                </li> -->
+                                <li>
+                                    Built <strong>isomorphic API caching logic</strong> that procures data in SSR and omnipresent in both CSR & SSR.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="exp-title">
+                            <p>
+                                <strong>
+                                    Frontend
+                                </strong>
+                                &ensp;|&ensp;All Test Maker
+                            </p>
+                            <span class="exp-period">
+                                Sept 2020 – Feb 2022 <span class="exp-duration">[1y 5m]</span>
+                            </span>
+                        </div>
+                        <p class="exp-subtext">
+                            Helping institutes, tutors & startups to create and conduct online tests.
+                        </p>
+                        <div class="exp-summary">                      
+                            <ul>
+                                <li>
+                                    Configured and managed an assesment platform to manage tests, students and question papers. Raked in <strong>25,000 test attempts</strong> till date while handling a bank constituting <strong>~8,00,000 question</strong>.
+                                </li>
+                                <li>
+                                    Shoehorned an Optical Character Recognition (<strong>OCR</strong>) engine in a <strong>chrome extension</strong> enabling user to pick questions off any website and have it added to desired test.
+                                </li>
+                                <!-- <li>
+                                    Setup an assesment module to monitor full screen exits and time spent on each question, aiding organizers with <strong>attempt analysis</strong>. 
+                                </li> -->
+                                <!-- <li>
+                                    Tackled UI overloading issues caused due to resource intensive Math-jax library and plethora of question bank data by controlling wasteful re-renders and paginating data.
+                                </li> -->
+                                <!-- <li>
+                                    Built multiple Docker deployment routines and workflows.
+                                </li> -->
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="exp-title">
+                            <p>
+                                <strong>
+                                    Software Developer 2
+                                </strong>
+                                &ensp;|&ensp;OLX People (formerly AasaanJobs)
+                            </p>
+                            <span class="exp-period">
+                                Jul 2019 – Mar 2021 <span class="exp-duration">[2y 10m]</span>
+                            </span>
+                        </div>
+                        <p class="exp-subtext">
+                            End-to-end recruitment marketplace connecting employers, consultants and job seekers.
+                        </p>
+                        <div class="exp-summary">                      
+                            <ul>
+                                <li>
+                                    Created and maintained a <strong>multi platform project</strong> that could export a React.js web app (<strong>~70,000 DAU</strong>) and a Native app for Android and iOS while maintaining bundle size.
+                                </li>
+                                <!-- <li>
+                                    Reduced Docker image size by ~33% removing unnecessary copying of generated files.
+                                </li> -->
+                                <li>
+                                    Built an AWS <strong>Firehose</strong> pipeline that processes client N/W calls utilizing <strong>Glue, Lambda</strong>. The N/W data was accessed using <strong>Athena</strong> for SEO purposes.
+                                </li>
+                                <li>
+                                    Configured style library catalogue using Storybook with trivial <strong>unit tests</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="two-columns">
+                <section id="experience">
+                    <h3>Education</h3>
+                    <div id="experience-list">
+                        <div class="exp-title">
+                            <p>
+                                <strong>
+                                    NIT Surat
+                                </strong>
+                            </p>
+                            <span class="exp-period">
+                                May 2018
+                            </span>
+                        </div>
+                        <p class="exp-subtext">
+                            B.Tech.&ensp;|&ensp;Computer Science & Engineering
+                        </p>
+                    </div>
+                </section>
+                <section id="experience">
+                    <h3>Skills</h3>
+                    <div id="experience-list">
+                        Flutter&emsp;React.js&emsp;Next.js&emsp;Typescript&emsp;Redux&emsp;CSS&emsp;GraphQL&emsp;MySQL&emsp;
+                    </div>
+                </section>
+                <!-- <section id="experience">
+                    <h3>Awards</h3>
+                    <div id="experience-list">
+                        <p>
+                            <strong>
+                                Performer of the Quarter
+                            </strong>
+                        </p>
+                        <p class="exp-subtext">
+                            Jul 2018 - Sept 2018
+                        </p>
+                    </div>
+                </section> -->
+            </section>
+            <section id="experience">
+                <h3>Digging Deep</h3>
+                <div id="experience-list">
+                    <strong>
+                        Why Apollo GraphQL’s writeQuery is necessary?
+                    </strong>
+                    <a class="exp-subtext" href="https://medium.com/building-aasaanjobs/why-apollo-graphqls-writequery-is-necessary-cd46cecd2757" target="_blank">
+                        https://medium.com/building-aasaanjobs/why-apollo-graphqls-writequery-is-necessary-cd46cecd2757
+                    </a>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
