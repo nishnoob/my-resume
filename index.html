@@ -41,6 +41,10 @@
                     justify-content: space-between;
                     /* align-items: center; */
                 }
+                header div a {
+                    text-decoration: none;
+                    color: black;
+                }
                 .headerName {
                     font-size: 42px;
                     font-weight: 400;
@@ -135,7 +139,10 @@
         <header>
             <div>
                 <p class="headerName">Agnish Mukherjee</p>
-                <p class="locName">Bengaluru, KA</p>
+                <div class="align-baseline">
+                    <img src="./phone.svg" width="15px" />
+                    <a href="tel:+919353719829" target="_blank">+91 9353719829</a>
+                </div>
             </div>
             <div class="miscDetailsContainer">
                 <div class="align-baseline">
@@ -198,7 +205,7 @@
                                 &ensp;|&ensp;smallcase
                             </p>
                             <span class="exp-period">
-                                Mar 2021 – Nov 2023 <span class="exp-duration">[1y 7m]</span>
+                                Mar 2021 – Nov 2022 <span class="exp-duration">[1y 7m]</span>
                             </span>
                         </div>
                         <p class="exp-subtext">
@@ -207,11 +214,14 @@
                         <div class="exp-summary">                      
                             <ul>
                                 <li>
-                                    Architectured and co-built a <strong>social networking platform</strong> that opened with over <stong>27,000</stong> registrations on beta launch.
+                                    Managed and maintained tickertape.in, built with <strong>React.js, Next.js and typescript</strong>.
                                 </li>
                                 <li>
-                                    Devised a way to sort all constituents of <strong>Nifty500</strong> Index based on live pricing with <strong>no additional iterative time complexity</strong>.
+                                    Architectured and co-built the social networking platform (Tickertape Social) that opened with over <strong>27,000 registrations on beta launch</strong>.
                                 </li>
+                                <!-- <li>
+                                    Devised a way to sort all constituents of <strong>Nifty500</strong> Index based on live pricing with <strong>no additional iterative time complexity</strong>.
+                                </li> -->
                                 <!-- <li>
                                     Took charge of migrating codebase from various analytics script to <strong>Segment</strong> resulting with a bump in Lighthouse Audits. 
                                 </li> -->
@@ -221,9 +231,9 @@
                                 <!-- <li>
                                     Conquered CSS and learned reusability, variables, combinators and specificity. Still learning.  
                                 </li> -->
-                                <li>
+                                <!-- <li>
                                     Built <strong>isomorphic API caching logic</strong> that procures data in SSR and omnipresent in both CSR & SSR.
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </article>
@@ -245,16 +255,19 @@
                         <div class="exp-summary">                      
                             <ul>
                                 <li>
-                                    Built and managed an assesment platform to manage tests, students and question papers.
+                                    Built a <strong>React Native</strong> app with test panel with over <strong>28,000 test attempts</strong>.
                                 </li>
                                 <li>
-                                    <strong>25,000 test attempts</strong>, <strong>800 institutes</strong>  and a bank constituting <strong>~8,00,000 question</strong>
+                                    Integrated <strong>white-labeling</strong> support for personalized app for paid clients.
+                                </li>
+                                <!-- <li>
+                                    Built and managed an assesment platform to manage tests, students and question papers.
+                                </li> -->
+                                <li>
+                                    Lead a team of 4 and built a SAAS EdTech platform that holds <strong>800 institutes</strong> and a bank constituting <strong>~8,00,000 question</strong>
                                 </li>
                                 <li>
                                     Shoehorned an Optical Character Recognition (<strong>OCR</strong>) engine in a <strong>chrome extension</strong> enabling user to pick questions off any website and have it added to desired test.
-                                </li>
-                                <li>
-                                    Built a <strong>React Native</strong> app for attempting quizzes; <strong>white-labeling</strong> support for personalized app for paid clients.
                                 </li>
                                 <!-- <li>
                                     Setup an assesment module to monitor full screen exits and time spent on each question, aiding organizers with <strong>attempt analysis</strong>. 
@@ -286,7 +299,7 @@
                         <div class="exp-summary">                      
                             <ul>
                                 <li>
-                                    Created and maintained a <strong>multi platform project</strong> that could export a React.js web app (<strong>~70,000 DAU</strong>) and a Native app for Android and iOS while maintaining bundle size.
+                                    Created and maintained a <strong>multi platform project</strong> that could export a React.js web app (~70,000 DAU) and a <strong>React Native </strong> app for Android and iOS while maintaining bundle size.
                                 </li>
                                 <li>
                                     Developed and maintained <strong>React Native</strong> app for field recruiters, <strong>increased application counts by 40%</strong>.
@@ -305,7 +318,28 @@
                     </article>
                 </div>
             </section>
-            
+
+            <section id="experience">
+                <h3>Projects</h3>
+                <div id="experience-list">
+                    <article>
+                        <div class="exp-title">
+                            <p>
+                                <strong>
+                                    Examdedo
+                                </strong>
+                            </p>
+                            <span class="exp-period">
+                                June 2020
+                            </span>
+                        </div>
+                        <p>
+                            A Learn-2-Earn <strong>React Native</strong> app that brought together test makers and test takers. Focused on JEE & NEET exams in India. 
+                        </p>
+                    </article>
+                </div>
+            </section>
+
             <section class="two-columns">
                 <section id="experience">
                     <h3>Education</h3>
