@@ -15,32 +15,31 @@
             padding: 0;
         }
         html{
-            font-family: 'Lora', serif;
+            font-family: 'Times New Roman', Times, serif;
             width: 21cm;
             height: 29.7cm;
-            /* font-size: 17px; */
         }
         body {
-            /* font-family: Arial, sans-serif;
-            line-height: 1.6; */
             color: #333;
             max-width: 800px;
             margin: 0 auto;
-            padding: 30px;
+            padding: 60px;
         }
         header {
             display: flex;
             width: 100%;
             padding: 0px 8px 20px;
+            justify-content: space-between;
+            align-items: center;
         }
         .name-div {
-            flex: 1;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
         h1 {
             text-align: center;
-            margin-bottom: 0px;
         }
-
         .contact-info {
             width: min-content;
         }
@@ -48,20 +47,30 @@
             text-align: right;
         }
         h2, h3 {
-            border-bottom: 1px solid #333;
+            border-bottom: 0.8px solid #333;
             padding: 0 8px;
+            margin-bottom: 4px;
         }
         h2, h2 > span {
             font-size: 1em;
-            text-transform: uppercase;
             letter-spacing: 0.4px;
         }
-        h2 span {
+        h1 span, h2 span {
             font-size: 0.8em;
+            text-transform: uppercase;
+        }
+        h1 span {
+            font-size: 0.6em;
+            letter-spacing: 2px;
         }
         .job {
             margin-bottom: 15px;
             padding: 0 8px;
+        }
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .job-header {
             display: flex;
@@ -69,8 +78,8 @@
             font-weight: bold;
         }
         ul {
-            /* margin-top: 5px; */
             padding-left: 20px;
+            text-align: justify;
         }
         .project {
             margin-bottom: 10px;
@@ -85,18 +94,25 @@
         }
         .exp-subtext {
             font-style: italic;
-            margin-bottom: 0px;
+            margin: 2px 0;
+        }
+        .education {
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="contact-info">
-            <a href="tel:+919353719829">+91 9353719829</a>
+            <span>+91 9353719829</span>
             agnish15m@gmail.com
         </div>
         <div class="name-div">
-            <h1>Agnish Mukherjee</h1>
+            <h1>A<span>gnish</span> M<span>ukherjee</span></h1>
+            <!-- <div class="education">
+                <span>B.Tech. | Computer Science & Engineering</span>
+                <p>NIT Surat 2018</p>
+            </div> -->
         </div>
         <div class="contact-info right">
             <a href="https://www.github.com/nishnoob" target="_blank">github.com/nishnoob</a>
@@ -109,54 +125,57 @@
         <div class="job">
             <div class="job-header">
                 <span>Founding Engineer</span>
-                <span>Floworks.ai</span>
+                <span class="header-center">Floworks.ai</span>
                 <span>Aug 2023 – July 2024 <span class="exp-duration">(1y)</span></span>
             </div>
-            <p class="exp-subtext">Unified Single Conversational Interface for all your work apps. Revolutionizing software interaction to enhance productivity and streamline workflow.</p>
+            <p class="exp-subtext">Unified Single Conversational Interface for work apps.</p>
             <ul>
                 <li>Developed a <strong>streaming chat interface</strong> using TypeScript and Next.js to enhance real-time communication.</li>
                 <li>Designed use-case infographics to improve user communication and engagement on the website.</li>
                 <li>Developed an AI agent that enables users to query their Gmail inbox.</li>
-                <li>Explored and applied advanced prompt engineering concepts, including <strong>Chain-of-Thought (CoT)</strong> and <strong>n-Shot learning</strong>, to develop a <strong>Mixture-of-Agents (MoA)</strong> model to synthesize user intent into structured API JSON formats.</li>
+                <li>Explored and applied advanced <strong>prompt engineering</strong> concepts, including Chain-of-Thought (CoT) and n-Shot learning, to develop a Mixture-of-Agents (MoA) model to synthesize user intent into structured API JSON formats.</li>
             </ul>
         </div>
         
         <div class="job">
             <div class="job-header">
                 <span>Software Engineer</span>
-                <span>Fitmint.io</span>
+                <span class="header-center">Fitmint.io</span>
                 <span>Nov 2022 – July 2023 <span class="exp-duration">(9m)</span></span>
             </div>
-            <p class="exp-subtext">A social fitness game which helps you get super-consistent by building your avatar & challenging your friends</p>
+            <p class="exp-subtext">A social fitness game which helps you get super-consistent by building your avatar & challenging your friends.</p>
             <ul>
-                <li>Developed a NFT Marketplace that pulled in <strong>~150,000 MATIC</strong> worth commission.</li>
-                <li>Built and maintained the community game app in flutter managing a <strong>~6000 DAU</strong>.</li>
+                <li>Developed the NFT Marketplace in Next.js that gathered <strong>~150,000 MATIC</strong> in commissions.</li>
+                <li>Built and maintained the community game app in Flutter managing a <strong>~6000 DAU</strong>.</li>
+                <li>Built the initital avatar loader in three.js using GLTFLoader.</li>
             </ul>
         </div>
         
         <div class="job">
             <div class="job-header">
                 <span>Frontend Engineer</span>
-                <span>smallcase</span>
+                <span class="header-center">smallcase</span>
                 <span>Mar 2021 – Nov 2022 <span class="exp-duration">(1y 7m)</span></span>
             </div>
             <p class="exp-subtext">One-stop shop for investors who want to invest in a specific theme, strategy, or objective with ease.</p>
             <ul>
-                <li>Managed and maintained tickertape.in, built with <strong>React.js, Next.js and typescript</strong>.</li>
+                <li>Managed and maintained tickertape.in <strong>(~72,000 DAU)</strong>, built with React.js, Next.js and typescript.</li>
                 <li>Developed a social networking platform (Tickertape Social) that opened with over <strong>27,000 registrations</strong>.</li>
-                <li>Improved page ranking (SEO) by restructuring pages</li>
+                <li>Restructured the URL hierarchy to <strong>improve page ranking</strong> by consolidating multiple sub-routes.</li>
             </ul>
         </div>
         
         <div class="job">
             <div class="job-header">
                 <span>Software Developer 2</span>
-                <span>OLX People (formerly AasaanJobs)</span>
+                <span class="header-center">OLX People</span>
                 <span>Jul 2018 – Mar 2021 <span class="exp-duration">(2y 10m)</span></span>
             </div>
             <p class="exp-subtext">End-to-end recruitment marketplace connecting employers, consultants and job seekers.</p>
             <ul>
-                <li>Managed a <strong>multi-platform project</strong> exporting a high-traffic web app and a React Native app for Android and iOS. Built data pipelines for SEO on AWS. Configured a <strong>style library</strong> (UI Kit) catalogue using Storybook.</li>
+                <li>Managed a multi-platform project exporting a high-traffic Preact.js app <strong>(~37,000 DAU)</strong> and a React Native app for Android and iOS. </li>
+                <li>Captured server side requests for SEO using Amazon Kinesis Firehose, AWS Glue (ETL), and AWS Lambda.</li>
+                <li>Configured a style library (UI Kit) catalogue using Storybook.</li>
             </ul>
         </div>
     </section>
@@ -165,13 +184,13 @@
         <h2>P<span>rojects</span></h2>
         <div class="project">
             <div class="job-header">
-                <span class="project-name">Co-Founder | All Test Maker</span>
+                <span class="project-name">Co-Founder</span>
+                <span class="header-center">All Test Maker</span>
                 <span>Sept 2020 – Feb 2022 <span class="exp-duration">(1y 5m)</span></span>
             </div>
             <p class="exp-subtext">Helping institutes, tutors & startups to create and conduct online tests.</p>
-            <ul>
-                <li>Lead a team in building a SAAS EdTech platform that holds <strong>800 institutes</strong> and a bank constituting <strong>~8,00,000 question</strong>. Using <strong>React Native</strong> app with test panel with over <strong>28,000 test attempts</strong>.</li>
-            </ul>
+            <p>Lead a team in building a SAAS EdTech platform that holds <strong>800 institutes</strong> and a bank constituting <strong>~8,00,000 question</strong>. Using React Native app with test panel with over <strong>28,000 test attempts</strong>.</p>
+            
         </div>
         
         <div class="project">
@@ -179,7 +198,7 @@
                 <span class="project-name">Examdedo</span>
                 <span>June 2020</span>
             </div>
-            <p>A Learn-2-Earn <strong>React Native</strong> app that brought together test makers and test takers. Focused on JEE & NEET exams in India.</p>
+            <p class="exp-subtext">A Learn-2-Earn React Native app that brought together test makers and test takers. Focused on JEE & NEET exams in India.</p>
         </div>
     </section>
 
@@ -187,10 +206,10 @@
         <h2>E<span>ducation</span></h2>
         <div class="project">
             <div class="job-header">
-                <span><strong>NIT Surat</strong></span>
+                <span><strong>B.Tech. | Computer Science & Engineering</strong></span>
                 <span>May 2018</span>
             </div>
-            <p class="exp-subtext">B.Tech. | Computer Science & Engineering</p>
+            <p>NIT Surat</p>
         </div>
     </section>
 
